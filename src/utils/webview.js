@@ -27,7 +27,6 @@ export function getClientLatestVersion(param) {
 export function getClientLatestVersion(param) {
     return new Promise((resolve, reject) => {
         const eventType = generateEventType();
-
         function handlerMessage(event) {
             window.removeEventListener(eventType, handlerMessage);
             resolve(event.detail.data);
@@ -39,6 +38,6 @@ export function getClientLatestVersion(param) {
             param: param,
             method: getClientLatestVersionFunction
         }
-        window.JSBridge.postMessage(req);
+        window.JSBridge.postMessage(JSON.stringify(req));
     });
 }
