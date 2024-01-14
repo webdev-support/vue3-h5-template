@@ -14,7 +14,7 @@
 <script setup lang="ts">
 import { ref, reactive } from "vue";
 
-const active = ref(0);
+const active = ref(3);
 const tabbarData = reactive([
   {
     icon: "wap-home-o",
@@ -36,6 +36,13 @@ const tabbarData = reactive([
     to: {
       name: "About"
     }
-  }
+  },
+    {
+        icon: "user-o",
+        title: "测试",
+        to: {
+            name: "Test"
+        }
+    }
 ]);
 </script>
