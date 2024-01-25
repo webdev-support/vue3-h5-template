@@ -1,7 +1,7 @@
-import NProgress from "nprogress";
-import "nprogress/nprogress.css";
+// import NProgress from "nprogress";
+// import "nprogress/nprogress.css";
 
-NProgress.configure({
+/*NProgress.configure({
   // 动画方式
   easing: "ease",
   // 递增进度条的速度
@@ -14,6 +14,10 @@ NProgress.configure({
   minimum: 0.3,
   // 加载条的父元素
   parent: "#app"
-});
+});*/
 
+const NProgress = {
+  start: function () {},
+  done: function () {}
+};
 export default NProgress;
