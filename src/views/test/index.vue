@@ -74,15 +74,11 @@
 
         <van-divider/>
         <a href="https://bing.com">bing语音测试</a><br/>
-
-        <van-divider/>
         <van-divider/>
         <a href="https://people.csail.mit.edu/ericchan/hdr/hdr.php">HDR图片支持</a><br/>
         <van-divider/>
+        <a href="https://m.ithome.com">It之家</a><br/>
         <van-divider/>
-        <a href="https://m.ithome.com">it之家</a><br/>
-        <van-divider/>
-
 
         <a href="https://www.opengps.cn/Share/ShareLocation/LocationTest.aspx"
         >opengps地图定位测试</a
