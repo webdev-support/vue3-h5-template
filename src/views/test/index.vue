@@ -24,6 +24,13 @@
         ></a>
         <a @click="getClientInfo">调用jsBriage接口获取应用版本号</a>
         <van-divider/>
+        <p>测试下拉框</p>
+        <label for="pet-select">Choose a pet:</label>
+        <select name="pets" id="pet-select">
+            <option value="">--Please choose an option--</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+        </select>
         <van-divider/>
         <p>多文件上传</p>
         <van-uploader v-model="fileList" multiple/>
@@ -69,6 +76,14 @@
         <a href="https://bing.com">bing语音测试</a><br/>
 
         <van-divider/>
+        <van-divider/>
+        <a href="https://people.csail.mit.edu/ericchan/hdr/hdr.php">HDR图片支持</a><br/>
+        <van-divider/>
+        <van-divider/>
+        <a href="https://m.ithome.com">it之家</a><br/>
+        <van-divider/>
+
+
         <a href="https://www.opengps.cn/Share/ShareLocation/LocationTest.aspx"
         >opengps地图定位测试</a
         >
@@ -93,6 +108,7 @@
         >测试deeplink
         </a>
         <van-divider/>
+
     </div>
 </template>
 

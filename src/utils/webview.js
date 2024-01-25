@@ -10,6 +10,7 @@ export function getClientLatestVersion(param) {
         const eventType = generateEventType();
 
         function handlerMessage(event) {
+
             window.removeEventListener(eventType, handlerMessage);
             resolve(event.detail.data);
         }
@@ -29,7 +30,11 @@ export function getClientLatestVersion(param) {
         const eventType = generateEventType();
         function handlerMessage(event) {
             window.removeEventListener(eventType, handlerMessage);
-            resolve(event.detail.data);
+            if(event.detail.success){
+                resolve(event.detail.data);
+            }else{
+                reject(event.detail.data);
+            }
         }
 
         window.addEventListener(eventType, handlerMessage);
