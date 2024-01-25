@@ -24,89 +24,50 @@
         ></a>
         <a @click="getClientInfo">调用jsBriage接口获取应用版本号</a>
         <van-divider/>
+<!--
         <p>测试下拉框</p>
         <label for="pet-select">Choose a pet:</label>
         <select name="pets" id="pet-select">
-            <option value="">--Please choose an option--</option>
+            <option value="">&#45;&#45;Please choose an option&#45;&#45;</option>
             <option value="dog">Dog</option>
             <option value="cat">Cat</option>
         </select>
         <van-divider/>
+-->
         <p>多文件上传</p>
         <van-uploader v-model="fileList" multiple/>
         <van-divider/>
         <p>单文件测试</p>
         <van-uploader v-model="files" reupload/>
         <van-divider/>
-        <p>拍照模式</p>
+        <p>拍摄照片</p>
         <van-uploader v-model="camera" capture=""/>
         <van-divider/>
-        <!--
-                <p>拍摄视频</p>
-                <van-uploader v-model="video" accept="video/*" capture="2"/>
-                <van-divider/>
-        -->
-        <a
-                style="display: block"
-                href="https://m.ithome.com"
-        >新页面打开</a
-        >
-
+        <p>拍摄视频</p>
+        <van-uploader v-model="video" accept="video/*" capture="2"/>
         <van-divider/>
-        <a
-                style="display: block"
-                href="https://weibo.com"
-        >main页面打开</a
-        >
-
+        <a  href="https://m.ithome.com" >网页测试:打开it之家</a > |  
+        <a  href="https://weibo.com" >网页测试:打开微博</a>
         <van-divider/>
-
-        <a href="https://www.p2hp.com/webcammictest/">p2hp摄像头测试</a> <br/>
-
+        <a href="https://www.p2hp.com/webcammictest/">p2hp摄像头测试</a> | <a href="https://qrcode.antfu.me">qrcode摄像头测试</a> <br/>
         <van-divider/>
-        <a href="https://qrcode.antfu.me">qrcode摄像头测试</a> <br/>
-
+        <a href="https://bing.com">bing语音搜索测试</a><br/>
         <van-divider/>
-        <a
-                href="https://themictest.com/zh/web-cam-test/?index.vue=IwAR3cPXrCwlo-UOuYxcsVDEBvqQv2HGt9RBjK4G1oU9qxIm6iYZsy5aOrQ1U"
-        >网络摄像头摄像头测试</a
-        >
-
+        <a href="https://people.csail.mit.edu/ericchan/hdr/hdr.php">HDR图片(geckoview暂不支持)</a><br/>
         <van-divider/>
-        <a href="https://bing.com">bing语音测试</a><br/>
-
+        <a href="https://map.baidu.com/@12742132,3543967,13z">百度地图</a> | <a href="https://www.opengps.cn/Share/ShareLocation/LocationTest.aspx" >opengps地图定位测试</a
         <van-divider/>
+        <a href="https://zegodev.gitee.io/zego-express-webrtc-sample/webrtcCheck/index.html" >webrtc测试</a >
+       <van-divider/>
+<!--        <a href="#" @click="downloadBlob">下载blob 文件测试</a>-->
+<!--        <van-divider/>-->
+		<a href="https://down.pc.yyb.qq.com/packing/5c457fa5c5aff61895772ab54a05d94c/pc_yyb_2100100012_installer.exe" download="1.ext">下载测试</a>
         <van-divider/>
-        <a href="https://people.csail.mit.edu/ericchan/hdr/hdr.php">HDR图片支持</a><br/>
+        <a href="https://www.bilibili.com/">测试打开bilibili客户端</a>
         <van-divider/>
+        <a href="https://ddys.one">视频播放测试1</a>
         <van-divider/>
-        <a href="https://m.ithome.com">it之家</a><br/>
-        <van-divider/>
-
-
-        <a href="https://www.opengps.cn/Share/ShareLocation/LocationTest.aspx"
-        >opengps地图定位测试</a
-        >
-        <van-divider/>
-        <a href="https://map.baidu.com/@12742132,3543967,13z">百度地图定位测试</a>
-        <van-divider/>
-        <a
-                href="https://zegodev.gitee.io/zego-express-webrtc-sample/webrtcCheck/index.html"
-        >webrtc测试</a
-        >
-        <van-divider/>
-        <a href="#" @click="downloadBlob">下载blob 文件测试</a>
-        <van-divider/>
-        <a href="#" @click="downloadApp">下载apk_test</a>
-        <van-divider/>
-        <a
-                href="intent://appstore?target=new&path=/#/shop/detail/packagename#Intent;scheme=lzc;package=cloud.lazycat.client;S.browser_fallback_url=http://m.ithome.com;end"
-        >测试deeplink chrome intent</a
-        >
-        <a
-                href="mtll://appstore?target=new&path=/#/shop/detail/"
-        >测试deeplink
-        </a>
+        <a href="https://halihali.icu">视频播放测试2</a>
         <van-divider/>
 
     </div>
@@ -185,10 +146,6 @@ export default {
                 });
         },
         downloadApp() {
-            var getCurrentVolume = SAFE.GetCurrentVolume();
-            SAFE.InstallLzcClient(
-                "http://example.apk"
-            );
         },
         downloadBlob() {
             function downloadBlobImage(dataURL, filename) {
