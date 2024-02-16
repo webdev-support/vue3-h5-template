@@ -40,7 +40,7 @@
         <p>单文件测试</p>
         <van-uploader v-model="files" reupload/>
         <van-divider/>
-        <p>拍照模式</p>
+        <p>拍摄照片</p>
         <van-uploader v-model="camera" capture=""/>
         <van-divider/>
         <p>拍摄视频</p>
